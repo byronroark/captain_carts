@@ -1,7 +1,7 @@
 <nav class="navbar is-white" role="navigation" aria-label="dropdown navigation">
   <div class="navbar-brand">
     <a class="navbar-item" id='logo'>
-      <img src="{{ site.baseurl }}/assets/images/logo.png" width="150" height="120">
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png" width="150" height="120">
     </a>
     <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -10,17 +10,17 @@
     </a>
   </div>
   <div class="navbar-menu" id="navMenu">
-    <a class="navbar-item" href="{{ site.baseurl }}/">
+    <a class="navbar-item" href="{{ site.url }}{{ site.baseurl }}/">
       Home
     </a>
-    <a class="navbar-item" href="{{ site.baseurl }}/about">
+    <a class="navbar-item" href="{{ site.url }}{{ site.baseurl }}/about">
       About
     </a>
-    <a class="navbar-item" href="{{ site.baseurl }}/gallery">
+    <a class="navbar-item" href="{{ site.url }}{{ site.baseurl }}/gallery">
       Gallery
     </a>
     <div class="navbar-item has-dropdown is-hoverable">
-      <a class="navbar-item" href="{{ site.baseurl }}/catalog">
+      <a class="navbar-item" href="{{ site.url }}{{ site.baseurl }}/catalog">
         Catalog
       </a>
       <div class="navbar-dropdown is-boxed">
@@ -38,7 +38,7 @@
   </div>
   <div class="navbar-item">
     <div class="buttons">
-      <a class="button is-success" href="{{ site.baseurl }}/contact">
+      <a class="button is-success" href="{{ site.url }}{{ site.baseurl }}/contact">
         <strong>Contact Us</strong>
       </a>
     </div>
