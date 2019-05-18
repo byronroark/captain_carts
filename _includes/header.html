@@ -1,0 +1,46 @@
+<nav class="navbar is-white" role="navigation" aria-label="dropdown navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" id='logo'>
+      <img src="{{ site.baseurl }}assets/images/logo.png" width="150" height="120">
+    </a>
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu" id="navMenu">
+    <a class="navbar-item" href="{{ site.baseurl }}/">
+      Home
+    </a>
+    <a class="navbar-item" href="{{ site.baseurl }}/about">
+      About
+    </a>
+    <a class="navbar-item" href="{{ site.baseurl }}/gallery">
+      Gallery
+    </a>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-item" href="{{ site.baseurl }}/catalog">
+        Catalog
+      </a>
+      <div class="navbar-dropdown is-boxed">
+        <a class="navbar-item">
+          Product One 
+        </a>
+        <a class="navbar-item">
+          Product Two
+        </a>
+        <a class="navbar-item">
+          Product Three
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-item">
+    <div class="buttons">
+      <a class="button is-success" href="{{ site.baseurl }}/contact">
+        <strong>Contact Us</strong>
+      </a>
+    </div>
+  </div>
+</nav>
