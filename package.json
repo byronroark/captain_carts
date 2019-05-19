@@ -16,10 +16,12 @@
   },
   "devDependencies": {},
   "scripts": {
+    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml",
     "css-build": "node-sass --omit-source-map-url assets/main.scss css/main.css",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-deploy": "npm run css-build && npm run css-postcss",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch",
-    "jekyll-build": "bundle exec jekyll build --config _config.yml,_config_dev.yml"
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
