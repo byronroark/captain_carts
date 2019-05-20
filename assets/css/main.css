@@ -6957,3 +6957,6 @@ a.navbar-item.has-dropdown {
 
 .has-shadow {
   text-shadow: 0 0 0.2em #0a0a0a; }
+
+.break-word {
+  word-wrap: break-word; }
