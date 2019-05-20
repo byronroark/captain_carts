@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
 
-$burnt-orange: #df6831;
+$burnt-orange: #783324;
 $orange: #e08824;
 $dark-gray: #2c3338;
 $light-gray: #EFF3F4;
@@ -48,4 +48,13 @@ a.navbar-item.has-dropdown {
 
 .button.is-success:target {
   border: 2px solid $orange;
+}
+
+.has-bg-img { 
+  background-image: url("../images/bg.jpg"); 
+  background-size: cover;
+}
+
+.has-shadow {
+  text-shadow: 0 0 0.2em $black;
 }
