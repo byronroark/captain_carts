@@ -58,3 +58,21 @@ a.navbar-item.has-dropdown {
 .has-shadow {
   text-shadow: 0 0 0.2em $black;
 }
+
+dt {
+  float: left;
+  clear: left;
+  text-align: left;
+  font-weight: bold;
+  width: 200px;
+  color: $dark-gray;
+}
+
+dt::after {
+  content: ":";
+}
+
+// dd {
+//   margin: 0 0 0 110px;
+//   padding: 0 0 1em 0;
+// }

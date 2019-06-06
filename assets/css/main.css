@@ -6987,3 +6987,14 @@ a.navbar-item.has-dropdown {
 
 .has-shadow {
   text-shadow: 0 0 0.2em #0a0a0a; }
+
+dt {
+  float: left;
+  clear: left;
+  text-align: left;
+  font-weight: bold;
+  width: 200px;
+  color: #2c3338; }
+
+dt::after {
+  content: ":"; }
