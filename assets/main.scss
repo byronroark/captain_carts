@@ -1,13 +1,13 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
 
-$burnt-orange: #783324;
-$orange: #e08824;
+$green: #849316;
+$bright-green: #bbd64b;
 $dark-gray: #2c3338;
 $light-gray: #EFF3F4;
 $navbar-item-img-max-height: 100px;
-$input-focus-border-color: $burnt-orange;
-$input-focus-box-shadow-color: $burnt-orange;
+$input-focus-border-color: $green;
+$input-focus-box-shadow-color: $green;
 
 // html, body {
 //   background: $light-gray;
@@ -18,45 +18,45 @@ a {
 }
 
 a:hover {
-  color: $burnt-orange;
+  color: $bright-green;
 }
 
 a.navbar-item {
-  color: $black;
+  color: $green;
 }
 
 a.navbar-item:hover {
-  color: $burnt-orange;
+  color: $bright-green;
 }
 
 a.navbar-item.has-dropdown {
-  color: $black;
+  color: $green;
 }
 
 // .navbar-dropdown a.navbar-item:hover {
-//   color: $burnt-orange;
+//   color: $green;
 // }
 
+span.tag.is-success {
+  background-color: $green;
+}
+
 .button.is-success {
-  background-color: $black;
+  background-color: $green;
 }
 
 .button.is-success:hover {
   color: $white;
-  background-color: $burnt-orange;
+  background-color: $bright-green;
 }
 
 .button.is-success:target {
-  border: 2px solid $orange;
+  border: 2px solid $green;
 }
 
 .has-bg-img { 
-  background-image: url("../images/bg.jpg"); 
+  background-image: url("../images/hero.png"); 
   background-size: cover;
-}
-
-.has-shadow {
-  text-shadow: 0 0 0.2em $black;
 }
 
 dt {
@@ -76,3 +76,9 @@ dt::after {
 //   margin: 0 0 0 110px;
 //   padding: 0 0 1em 0;
 // }
+
+.hero.is-success.is-bold {
+  background-image: linear-gradient(141deg, #849316 0%, #bbd64b 71%, #d2e682 100%); }
+  @media screen and (max-width: 768px) {
+    .hero.is-success.is-bold .navbar-menu {
+      background-image: linear-gradient(141deg, #849316 0%, #bbd64b 71%, #d2e682 100%); } }
