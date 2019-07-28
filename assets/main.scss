@@ -9,9 +9,9 @@ $navbar-item-img-max-height: 100px;
 $input-focus-border-color: $green;
 $input-focus-box-shadow-color: $green;
 
-// html, body {
-//   background: $light-gray;
-// }
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+    padding-top: 4.9rem;
+}
 
 a {
   color: $green;

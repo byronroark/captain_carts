@@ -6956,6 +6956,10 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+  padding-top: 4.9rem; }
+
 a {
   color: #849316; }
 
