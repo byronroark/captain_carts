@@ -4,6 +4,7 @@
 $green: #849316;
 $bright-green: #bbd64b;
 $dark-gray: #2c3338;
+$gray: #474747;
 $light-gray: #EFF3F4;
 $navbar-item-img-max-height: 100px;
 $input-focus-border-color: $green;
@@ -57,6 +58,10 @@ span.tag.is-success {
 .has-bg-img { 
   background-image: url("../images/hero.png"); 
   background-size: cover;
+}
+
+.content h1, .content h2 {
+  color: $gray;
 }
 
 dt {
