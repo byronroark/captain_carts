@@ -7015,7 +7015,7 @@ dt::after {
     padding-bottom: 1.5rem;
     padding-top: 4.4rem; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-small .hero-body {
     padding-bottom: 1.5rem;
     padding-top: 4.4rem; }
@@ -7025,6 +7025,6 @@ dt::after {
 .hero.is-success.is-bold {
   background-image: linear-gradient(141deg, #849316 0%, #bbd64b 71%, #d2e682 100%); }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero.is-success.is-bold .navbar-menu {
     background-image: linear-gradient(141deg, #849316 0%, #bbd64b 71%, #d2e682 100%); } }
