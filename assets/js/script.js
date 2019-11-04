@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 });
+
+bulmaCarousel.attach('#carousel-rx5', {
+  slidesToScroll: 1,
+  slidesToShow: 4
+});
