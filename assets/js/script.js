@@ -28,3 +28,14 @@ bulmaCarousel.attach('#carousel-rx5', {
   slidesToScroll: 1,
   slidesToShow: 4
 });
+
+function calculate() {
+  var arr = $.map($('input[type="checkbox"]:checked'), function(e, i) {
+    return e.value;
+  });
+  $('span').text('the checked values are: ' + arr.join(','));
+  // console.log('the checked values are: ' + arr.join(','))
+}
+
+calculate();
+$('div').on('click', 'input:checkbox', calculate);

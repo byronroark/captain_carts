@@ -57,8 +57,16 @@ span.tag.is-success {
 
 .has-bg-img { 
   background-image: url("../images/hero.png"); 
-  background-size: cover;
-}
+  background-size: cover; }
+  @media screen and (max-width: 992px) {
+  .has-bg-img {
+      position: relative;
+      margin-top: 100px; } }
+  @media only screen and (max-device-width: 480px) {
+    .has-bg-img {
+      background-image: url("../images/hero-mobile.png");
+      position: relative;
+      margin-top: 70px; } }
 
 .content h1, .content h2 {
   color: $gray;
