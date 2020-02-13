@@ -30,7 +30,7 @@ permalink: /contact
     </div>
     <div class="columns">
       <div class="column is-5">
-        <form action="https://getsimpleform.com/messages?form_api_token=be4e9ee5af7edeed02632cb90ddce5f4" method="post" id="contact-form">
+        <form action="https://getsimpleform.com/messages?form_api_token=be4e9ee5af7edeed02632cb90ddce5f4" method="post" onsubmit="return submitForm();" id="contact-form">
           <input type="hidden" name="redirect_to" value="{{ site.url }}/thank-you" />
 
           <div class="field">
@@ -191,8 +191,9 @@ permalink: /contact
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <div id="g-recaptcha"></div>
-                  <input class="button is-success is-medium" type="submit" value="Send">
+                  <div class="g-recaptcha" data-sitekey="6LfTatgUAAAAAJAjN-796hqkY8u4GTyCAC2ej1fI" data-callback="verifyCaptcha"></div>
+                  <div id="g-recaptcha-error"></div>
+                  <input class="button is-success is-medium" type="submit" name="submit" value="Send">
                 </div>
               </div>
             </div>

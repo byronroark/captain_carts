@@ -39,18 +39,15 @@ function calculate() {
 calculate();
 $('div').delegate('input:checkbox', 'click', calculate);
 
-var onloadCallback = function() {
-  grecaptcha.render('g-recaptcha', {
-    'sitekey' : '6LeXadgUAAAAADvJBjGQAiQPc0YQEoHNVIV-qtWd'
-  });
-};
-onloadCallback();
-
-$('form').on('submit', function(e) {
-  if(grecaptcha.getResponse() == "") {
-    e.preventDefault();
-    alert("You shall not pass!");
-  } else {
-    alert("Thank you");
+function submitForm() {
+  var response = grecaptcha.getResponse();
+  if(response.length == 0) {
+    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+    return false;
   }
-});
+  return true;
+}
+
+function verifyCaptcha() {
+  document.getElementById('g-recaptcha-error').innerHTML = '';
+}
