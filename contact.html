@@ -30,24 +30,34 @@ permalink: /contact
     </div>
     <div class="columns">
       <div class="column is-5">
-        <form action="https://getsimpleform.com/messages?form_api_token=be4e9ee5af7edeed02632cb90ddce5f4" method="post" onsubmit="return submitForm();" id="contact-form">
+        <form action="https://getsimpleform.com/messages?form_api_token=be4e9ee5af7edeed02632cb90ddce5f4" method="post" id="contact-form">
+          <div class="messages"></div>
           <input type="hidden" name="redirect_to" value="{{ site.url }}/thank-you" />
 
           <div class="field">
             <div class="control">
-              <input class="input" type="text" name="name" form="contact-form" placeholder="Full Name">
+              <div class="form-group">
+                <input class="input" type="text" name="name" form="contact-form" placeholder="Full Name" required="required" data-error="Name is required">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
           
           <div class="field">
             <div class="control">
-              <input class="input" type="text" name="email" form="contact-form" placeholder="Email">
+              <div class="form-group">
+                <input class="input" type="text" name="email" form="contact-form" placeholder="Email" required="required" data-error="Valid email is required">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
         
           <div class="field">
             <div class="control">
-              <input class="input" type="text" name="phone" form="contact-form" placeholder="Phone Number">
+              <div class="form-group">
+                <input class="input" type="text" name="phone" form="contact-form" placeholder="Phone Number" required="required" data-error="Enter your phone number">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
 
@@ -175,13 +185,19 @@ permalink: /contact
 
           <div class="field">
             <div class="control">
-              <input class="input" type="text" name="zipcode" form="contact-form" placeholder="Shipping Zip Code">
+              <div class="form-group">
+                <input class="input" type="text" name="zipcode" form="contact-form" placeholder="Shipping Zip Code" required="required" data-error="Enter your Zip Code">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
           
           <div class="field">
             <div class="control">
-              <textarea class="textarea" name="message" form="contact-form" placeholder="Message"></textarea>
+              <div class="form-group">
+                <textarea class="textarea" name="message" form="contact-form" placeholder="Message" required="required" data-error="Please leave us a message"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
           </div>
         
@@ -191,9 +207,12 @@ permalink: /contact
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <div class="g-recaptcha" data-sitekey="6LfTatgUAAAAAJAjN-796hqkY8u4GTyCAC2ej1fI" data-callback="verifyCaptcha"></div>
-                  <div id="g-recaptcha-error"></div>
-                  <input class="button is-success is-medium" type="submit" name="submit" value="Send">
+                  <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfTatgUAAAAAJAjN-796hqkY8u4GTyCAC2ej1fI" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                    <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <input class="button is-success is-medium" type="submit" value="Send">
                 </div>
               </div>
             </div>

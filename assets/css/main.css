@@ -7006,6 +7006,9 @@ span.tag.is-success {
 .content h1, .content h2 {
   color: #474747; }
 
+.list-unstyled {
+  color: red; }
+
 dt {
   float: left;
   clear: left;
