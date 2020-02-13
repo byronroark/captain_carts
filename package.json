@@ -4,6 +4,8 @@
   "description": "Captain Carts",
   "main": "assets/main.scss",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "all": "0.0.0",
     "autoprefixer": "^9.7.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",

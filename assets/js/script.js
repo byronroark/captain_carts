@@ -38,3 +38,19 @@ function calculate() {
 
 calculate();
 $('div').delegate('input:checkbox', 'click', calculate);
+
+var onloadCallback = function() {
+  grecaptcha.render('g-recaptcha', {
+    'sitekey' : '6LeXadgUAAAAADvJBjGQAiQPc0YQEoHNVIV-qtWd'
+  });
+};
+onloadCallback();
+
+$('form').on('submit', function(e) {
+  if(grecaptcha.getResponse() == "") {
+    e.preventDefault();
+    alert("You shall not pass!");
+  } else {
+    alert("Thank you");
+  }
+});
